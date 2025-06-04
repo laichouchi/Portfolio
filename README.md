@@ -1,8 +1,8 @@
 # Description
 simple portfolio website with fancy stuff can be used as a template
 
-#📬 Contact
+# 📬 Contact
 
-##Reach me at:
+## Reach me at:
 Email: laichouchiryan@gmail.com
 Discord: Leyn.cx
