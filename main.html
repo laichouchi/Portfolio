@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--soo i made this code for fun and to help starting developers
+     the code is straight and clair i spent a lot on this don't touch anything or it will .... :3-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laichouchi Rayan | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+    <!-- Particle background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content centered">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="profile-pic">
+                            <img src="pfp.jpg" alt="Profile Picture" class="profile-img">
+                        </div>
+                        <h1 class="animate-pop-in">Laichouchi Rayan</h1>
+                        <p class="role animate-pop-in">Front & Back end Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>💫 About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>- 🌱 I'm currently learning <strong>C++</strong></p>
+                    <p>- 💬 Ask me about: <strong>Discord Tech (Bots, Tokens...)</strong></p>
+                    <p>- 📫 How to reach me: <a href="mailto:laichouchiryan@gmail.com">laichouchiryan@gmail.com</a></p>
+                    <p>- ⚡ Fun fact: <strong>There were active volcanoes on the moon when dinosaurs were alive.</strong></p>
+                </div>
+                <div class="about-image">
+                    <!-- Pyramid loader for about section -->
+                    <div class="pyramid-loader">
+                      <div class="wrapper">
+                        <span class="side side1"></span>
+                        <span class="side side2"></span>
+                        <span class="side side3"></span>
+                        <span class="side side4"></span>
+                        <span class="shadow"></span>
+                      </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Socials Section -->
+    <section id="socials" class="section">
+        <div class="container">
+            <h2>🌐 Socials</h2>
+            <div class="social-grid">
+                <a href="https://discord.gg/Leyncx" class="social-card animate-slide-in" style="--delay: 0.1s">
+                    <i class="fab fa-discord"></i>
+                    <span>Discord</span>
+                </a>
+                <a href="https://github.com/laichouchi" class="social-card animate-slide-in" style="--delay: 0.2s">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://instagram.com/rayanwayane" class="social-card animate-slide-in" style="--delay: 0.3s">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="mailto:laichouchiryan@gmail.com" class="social-card animate-slide-in" style="--delay: 0.4s">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech" class="section">
+        <div class="container">
+            <h2>💻 Tech Stack</h2>
+            <div class="tech-badges">
+                <span class="badge animate-pop-in" style="--delay: 0.1s"><i class="fab fa-cuttlefish"></i> C++</span>
+                <span class="badge animate-pop-in" style="--delay: 0.2s"><i class="fab fa-java"></i> Java</span>
+                <span class="badge animate-pop-in" style="--delay: 0.3s"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="badge animate-pop-in" style="--delay: 0.4s"><i class="fas fa-terminal"></i> Terminal</span>
+                <span class="badge animate-pop-in" style="--delay: 0.5s"><i class="fab fa-python"></i> Python</span>
+                <span class="badge animate-pop-in" style="--delay: 0.6s"><i class="fab fa-figma"></i> Figma</span>
+                <span class="badge animate-pop-in" style="--delay: 0.7s"><i class="fas fa-user-secret"></i> TOR</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="section">
+        <div class="container">
+            <h2>📊 GitHub Stats</h2>
+            <div class="stats-grid">
+                <div class="stat-card animate-slide-in" style="--delay: 0.1s">
+                    <img src="https://github-readme-stats.vercel.app/api?username=Laichouchi&theme=dark&hide_border=false&include_all_commits=false&count_private=false" alt="GitHub Stats">
+                </div>
+                <div class="stat-card animate-slide-in" style="--delay: 0.2s">
+                    <img src="https://nirzak-streak-stats.vercel.app/?user=Laichouchi&theme=dark&hide_border=false" alt="GitHub Streak">
+                </div>
+                <div class="stat-card animate-slide-in" style="--delay: 0.3s">
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Laichouchi&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact" alt="Top Languages">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section id="quote" class="section">
+        <div class="container">
+            <h2>✍️ Random Dev Quote</h2>
+            <div class="quote-card animate-pop-in">
+                <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="particles.js"></script>
+    <script src="scroll-animations.js"></script>
+</body>
+</html>
