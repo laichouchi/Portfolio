@@ -1,4 +1,4 @@
-/* Base styles and resets */
+
 * {
     margin: 0;
     padding: 0;
@@ -100,7 +100,7 @@ a:hover {
     margin-left: 1rem;
 }
 
-/* Particle background */
+
 #particles-canvas {
     position: fixed;
     top: 0;
@@ -110,7 +110,6 @@ a:hover {
     z-index: -1;
 }
 
-/* Navigation */
 nav {
     position: fixed;
     width: 100%;
@@ -178,7 +177,6 @@ nav ul li a:hover:after {
     cursor: pointer;
 }
 
-/* Card Styles */
 .card {
   width: 350px;
   height: 450px;
@@ -362,7 +360,6 @@ nav ul li a:hover:after {
   line-height: 1.4;
 }
 
-/* Hero Section */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -418,7 +415,6 @@ nav ul li a:hover:after {
     filter: brightness(1.1);
 }
 
-/* Removed placeholder styles as we're using an image now */
 
 .hero-image {
     flex: 1;
@@ -472,7 +468,6 @@ nav ul li a:hover:after {
     100% { transform: scale(1.1); }
 }
 
-/* About Section */
 .about-content {
     display: flex;
     gap: 3rem;
@@ -497,7 +492,6 @@ nav ul li a:hover:after {
     margin: 0 auto;
 }
 
-/* Socials Section */
 #socials {
     background: var(--dark);
     padding: 5rem 0;
@@ -581,7 +575,6 @@ nav ul li a:hover:after {
     font-weight: 600;
 }
 
-/* Tech Stack Section */
 .tech-badges {
     display: flex;
     flex-wrap: wrap;
@@ -597,7 +590,6 @@ nav ul li a:hover:after {
     box-shadow: 0 4px 10px rgba(106, 17, 203, 0.3);
 }
 
-/* Stats Section */
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -622,7 +614,6 @@ nav ul li a:hover:after {
     display: block;
 }
 
-/* Quote Section */
 .quote-card {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
@@ -637,7 +628,6 @@ nav ul li a:hover:after {
     border-radius: 10px;
 }
 
-/* Contact Section */
 .contact-form {
     display: flex;
     gap: 3rem;
@@ -722,7 +712,6 @@ nav ul li a:hover:after {
     margin: 0;
 }
 
-/* Footer */
 footer {
     background: rgba(10, 10, 20, 0.8);
     padding: 2rem 0;
@@ -735,7 +724,6 @@ footer p {
     opacity: 0.8;
 }
 
-/* Pyramid Loader - From Uiverse.io by andrew-demchenk0 */ 
 .pyramid-loader {
   position: relative;
   width: 300px;
@@ -806,7 +794,6 @@ footer p {
   filter: blur(12px);
 }
 
-/* Ripple effect */
 .profile-pic {
     position: relative;
 }
@@ -877,7 +864,6 @@ footer p {
     }
 }
 
-/* Wave animation */
 .wave {
     position: absolute;
     top: 0;
@@ -913,14 +899,12 @@ footer p {
     }
 }
 
-/* Add gradient to the wave */
 .wave-gradient {
     --color-start: rgba(106, 17, 203, 0.5);
     --color-mid: rgba(159, 89, 223, 0.6);
     --color-end: rgba(209, 160, 255, 0.4);
 }
 
-/* Smooth wave transitions */
 .wave svg path {
     transition: all 0.3s ease-in-out;
 }
@@ -999,7 +983,7 @@ footer p {
     }
 }
 
-/* Scroll animations */
+/* this wass paiiiiiiin */
 .reveal {
     position: relative;
     transform: translateY(50px);
