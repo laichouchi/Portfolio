@@ -1,6 +1,6 @@
-// DOM Content Loaded
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize animations and event listeners
+   
     initNav();
     initScrollAnimations();
     initForm();
@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
     initWaveAnimation();
 });
 
-// Navigation effects
+
 function initNav() {
     const nav = document.querySelector('nav');
     
-    // Change nav style on scroll
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             nav.classList.add('scrolled');
@@ -22,7 +22,7 @@ function initNav() {
         }
     });
 
-    // Smooth scrolling for anchor links
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -37,9 +37,9 @@ function initNav() {
     });
 }
 
-// Scroll animations
+
 function initScrollAnimations() {
-    // Create Intersection Observer for scroll animations
+
     const observerOptions = {
         root: null,
         rootMargin: '0px',
@@ -49,25 +49,25 @@ function initScrollAnimations() {
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Animate elements when they come into view
+            
                 const elements = entry.target.querySelectorAll('.animate-pop-in, .animate-slide-in');
                 elements.forEach(el => {
                     el.style.animationDelay = el.style.getPropertyValue('--delay') || '0s';
                     el.classList.add('active');
                 });
                 
-                // Stop observing after animation
+           
                 observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
-    // Observe all sections
+  
     document.querySelectorAll('.section').forEach(section => {
         observer.observe(section);
     });
 
-    // Hero animations
+ 
     const heroElements = document.querySelectorAll('.hero .animate-pop-in');
     heroElements.forEach((el, index) => {
         el.style.animationDelay = `${index * 0.2}s`;
@@ -75,14 +75,14 @@ function initScrollAnimations() {
     });
 }
 
-// Form handling
+
 function initForm() {
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Simple form validation
+            
             const name = this.querySelector('input[type="text"]').value.trim();
             const email = this.querySelector('input[type="email"]').value.trim();
             const message = this.querySelector('textarea').value.trim();
@@ -92,14 +92,14 @@ function initForm() {
                 return;
             }
             
-            // In a real application, you would send this to a server
+            //i was aiming to put this website in a server with requests handler... but am broke soo this is useless here
             alert('Thank you for your message! I\'ll get back to you soon.');
             this.reset();
         });
     }
 }
 
-// Mobile menu toggle
+
 function initMobileMenu() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('nav ul');
@@ -111,7 +111,7 @@ function initMobileMenu() {
     }
 }
 
-// Initialize pyramid loader animation
+
 function initPyramidLoader() {
     const pyramidLoader = document.querySelector('.pyramid-loader');
     if (pyramidLoader) {
@@ -119,7 +119,6 @@ function initPyramidLoader() {
     }
 }
 
-// Initialize wave animation
 function initWaveAnimation() {
     const body = document.body;
     if (body) {
@@ -137,12 +136,12 @@ function initWaveAnimation() {
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" class="shape-fill"></path>
             </svg>
         `;
-        // Insert at the beginning of the body to position it at the top
+       
         body.insertBefore(waveDiv, body.firstChild);
     }
 }
 
-// Parallax effect for hero section
+
 window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY;
     const hero = document.querySelector('.hero');
@@ -152,7 +151,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Dynamic year in footer
+
 const yearSpan = document.querySelector('footer p:last-child');
 if (yearSpan) {
     const currentYear = new Date().getFullYear();
