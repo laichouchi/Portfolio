@@ -1,15 +1,13 @@
-// Particle system for animated background
+
 document.addEventListener('DOMContentLoaded', function() {
     const canvas = document.getElementById('particles-canvas');
     const ctx = canvas.getContext('2d');
     let particles = [];
     const particleCount = 150;
 
-    // Set canvas size to window size
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    // Particle class
     class Particle {
         constructor() {
             this.x = Math.random() * canvas.width;
@@ -37,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Create particles
     function init() {
         particles = [];
         for (let i = 0; i < particleCount; i++) {
@@ -45,16 +42,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Animation loop
     function animate() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         
-        // Update and draw particles
+
         particles.forEach(particle => {
             particle.update();
             particle.draw();
-            
-            // Connect particles
+
             for (let j = 0; j < particles.length; j++) {
                 const dx = particle.x - particles[j].x;
                 const dy = particle.y - particles[j].y;
@@ -74,14 +69,12 @@ document.addEventListener('DOMContentLoaded', function() {
         requestAnimationFrame(animate);
     }
 
-    // Handle window resize
     window.addEventListener('resize', () => {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
         init();
     });
 
-    // Start the animation
     init();
     animate();
 });
