@@ -1,4 +1,4 @@
-/* Animations */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -19,7 +19,6 @@
     }
 }
 
-/* Section Animations */
 .section {
     opacity: 0;
     transform: translateY(40px);
@@ -31,7 +30,6 @@
     transform: translateY(0);
 }
 
-/* Social Cards */
 .social-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -115,7 +113,6 @@
     color: var(--card-color);
 }
 
-/* Social card specific colors with delays */
 .social-card:nth-child(1) { 
     --card-color: #5865F2; 
     animation-delay: 0.1s;
@@ -133,7 +130,6 @@
     animation-delay: 0.4s;
 }
 
-/* Section Headers */
 section h2 {
     position: relative;
     display: inline-block;
