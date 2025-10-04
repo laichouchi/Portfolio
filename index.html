@@ -1,131 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--soo i made this code for fun and to help starting developers
-     the code is straight and clair i spent a lot on this don't touch anything or it will .... :3-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laichouchi Rayan | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Laichouchi Ryan - C++ Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="animations.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="preconnect" crossorigin>
+    <link rel="preload" href="script.js" as="script">
+    <meta name="theme-color" content="#10002B">
+    <meta name="description" content="Laichouchi Ryan - Passionate C++ developer specializing in systems programming, algorithms, and high-performance applications.">
 </head>
 <body>
+    <!-- Enhanced animated background -->
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+    
+    <!-- Floating code snippets -->
+    <div class="code-snippets">
+        <div class="code-snippet">#include &lt;iostream&gt;</div>
+        <div class="code-snippet">def hello_world():</div>
+        <div class="code-snippet">std::cout &lt;&lt; "Hello";</div>
+        <div class="code-snippet">import numpy as np</div>
+        <div class="code-snippet">class MyClass {</div>
+        <div class="code-snippet">if __name__ == "__main__":</div>
+        <div class="code-snippet">vector&lt;int&gt; arr;</div>
+        <div class="code-snippet">pandas.DataFrame()</div>
+    </div>
+    
+    <!-- Geometric shapes -->
+    <div class="geometric-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+        <div class="shape shape-6"></div>
+    </div>
 
-    <canvas id="particles-canvas"></canvas>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <span class="logo-text">Ryan</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+                <a href="#tech" class="nav-link">
+                    <i class="fas fa-cogs"></i>
+                    <span>Skills</span>
+                </a>
+                <a href="#projects" class="nav-link">
+                    <i class="fas fa-folder"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content centered">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="profile-pic">
-                            <img src="pfp.jpg" alt="Profile Picture" class="profile-img">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="profile-section">
+                    <div class="profile-picture">
+                        <div class="profile-img">
+                            <img src="pfp.png" alt="Laichouchi Ryan" class="profile-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <i class="fas fa-user" style="display: none;"></i>
                         </div>
-                        <h1 class="animate-pop-in">Laichouchi Rayan</h1>
-                        <p class="role animate-pop-in">Front & Back end Developer</p>
+                        <div class="profile-ring"></div>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Hi, I'm</span>
+                        <span class="title-name">Laichouchi Ryan</span>
+                        <span class="title-role">C++, Web & Python Developer</span>
+                    </h1>
+                    <p class="hero-description">
+                        Passionate about C++ systems programming, algorithms, and building high-performance applications. 
+                        I love solving complex problems with elegant C++ solutions and exploring low-level programming concepts.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary">Get to know me</a>
+                        <a href="#contact" class="btn btn-secondary">Let's connect</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="section">
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
-            <h2>💫 About Me</h2>
+            <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>- 🌱 I'm currently learning <strong>C++</strong></p>
-                    <p>- 💬 Ask me about: <strong>Discord Tech (Bots, Tokens...)</strong></p>
-                    <p>- 📫 How to reach me: <a href="mailto:laichouchiryan@gmail.com">laichouchiryan@gmail.com</a></p>
-                    <p>- ⚡ Fun fact: <strong>There were active volcanoes on the moon when dinosaurs were alive.</strong></p>
-                </div>
-                <div class="about-image">
-                    <!-- Pyramid loader for about section -->
-                    <div class="pyramid-loader">
-                      <div class="wrapper">
-                        <span class="side side1"></span>
-                        <span class="side side2"></span>
-                        <span class="side side3"></span>
-                        <span class="side side4"></span>
-                        <span class="shadow"></span>
-                      </div>  
+                    <p>
+                        I'm a passionate C++ developer with 3+ years of experience building 
+                        high-performance applications, system-level software, and solving complex algorithmic problems. 
+                        I specialize in systems programming, memory management, and creating efficient C++ solutions.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me exploring new C++ features, contributing to 
+                        open source projects, or diving deep into computer science concepts and optimization techniques.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Lines of Code</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Passion</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="socials" class="section">
+    <!-- Tech Stack Section -->
+    <section id="tech" class="tech-stack">
         <div class="container">
-            <h2>🌐 Socials</h2>
-            <div class="social-grid">
-                <a href="https://discord.gg/Leyncx" class="social-card animate-slide-in" style="--delay: 0.1s">
-                    <i class="fab fa-discord"></i>
-                    <span>Discord</span>
-                </a>
-                <a href="https://github.com/laichouchi" class="social-card animate-slide-in" style="--delay: 0.2s">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <h3>Programming Languages</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <i class="fas fa-code"></i>
+                            <span>C++</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-php"></i>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Python & C++ Libraries</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <i class="fas fa-brain"></i>
+                            <span>NumPy</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Pandas</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-robot"></i>
+                            <span>OpenCV</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>TensorFlow</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-cube"></i>
+                            <span>OpenGL</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Boost</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Tools & Systems</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <i class="fab fa-linux"></i>
+                            <span>Linux</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-bug"></i>
+                            <span>GDB</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-server"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-terminal"></i>
+                            <span>Bash</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-file-code"></i>
+                            <span>CMake</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Progress Section -->
+    <section class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">C++</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="70"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">React & Vue.js</span>
+                        <span class="skill-percentage">65%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="65"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Node.js & Backend</span>
+                        <span class="skill-percentage">68%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="68"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Data Structures & Algorithms</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>C++ Banking System</h3>
+                        <p>Complete banking management system built in C++ with file I/O, transaction handling, and secure account management features.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">File I/O</span>
+                            <span class="tech-tag">OOP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/laichouchi/Banking-System" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://github.com/laichouchi/Banking-System" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Discord Server Website</h3>
+                        <p>Modern website for Discord gaming community with real-time member count, event calendar, and interactive features.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/laichouchi/discord-website" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://laichouchi.github.io/discord-website/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-dice"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Number Guessing Game</h3>
+                        <p>Classic number guessing game with hints, score tracking, and multiple difficulty levels. A fun little project! 😄</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Random</span>
+                            <span class="tech-tag">Fun</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/laichouchi/Number-Game" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://github.com/laichouchi/Number-Game" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Terminal Section -->
+    <section class="terminal-section">
+        <div class="container">
+            <h2 class="section-title">Live Terminal</h2>
+            <div class="terminal-container">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="terminal-btn"></span>
+                        <span class="terminal-btn"></span>
+                        <span class="terminal-btn"></span>
+                    </div>
+                    <div class="terminal-title">Terminal</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-command" id="terminal-command">whoami</span>
+                        <span class="terminal-cursor">|</span>
+                    </div>
+                    <div class="terminal-output" id="terminal-output"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dev Quote Section -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-container">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <blockquote class="dev-quote" id="dev-quote">
+                    "Code is like humor. When you have to explain it, it's bad."
+                </blockquote>
+                <cite class="quote-author">- Cory House</cite>
+                <button class="quote-btn" onclick="generateNewQuote()">
+                    <i class="fas fa-refresh"></i>
+                    New Quote
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Links Section -->
+    <section id="contact" class="social-section">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="social-links">
+                <a href="https://github.com" class="social-link" target="_blank">
                     <i class="fab fa-github"></i>
                     <span>GitHub</span>
                 </a>
-                <a href="https://instagram.com/rayanwayane" class="social-card animate-slide-in" style="--delay: 0.3s">
+                <a href="https://instagram.com" class="social-link" target="_blank">
                     <i class="fab fa-instagram"></i>
                     <span>Instagram</span>
                 </a>
-                <a href="mailto:laichouchiryan@gmail.com" class="social-card animate-slide-in" style="--delay: 0.4s">
+                <a href="https://twitter.com" class="social-link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="mailto:your.email@example.com" class="social-link">
                     <i class="fas fa-envelope"></i>
                     <span>Email</span>
+                </a>
+                <a href="https://discord.gg" class="social-link" target="_blank">
+                    <i class="fab fa-discord"></i>
+                    <span>Discord</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="tech" class="section">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <h2>💻 Tech Stack</h2>
-            <div class="tech-badges">
-                <span class="badge animate-pop-in" style="--delay: 0.1s"><i class="fab fa-cuttlefish"></i> C++</span>
-                <span class="badge animate-pop-in" style="--delay: 0.2s"><i class="fab fa-java"></i> Java</span>
-                <span class="badge animate-pop-in" style="--delay: 0.3s"><i class="fab fa-js"></i> JavaScript</span>
-                <span class="badge animate-pop-in" style="--delay: 0.4s"><i class="fas fa-terminal"></i> Terminal</span>
-                <span class="badge animate-pop-in" style="--delay: 0.5s"><i class="fab fa-python"></i> Python</span>
-                <span class="badge animate-pop-in" style="--delay: 0.6s"><i class="fab fa-figma"></i> Figma</span>
-                <span class="badge animate-pop-in" style="--delay: 0.7s"><i class="fas fa-user-secret"></i> TOR</span>
-            </div>
+            <p>&copy; 2024 Laichouchi Ryan. Made with <i class="fas fa-heart"></i> and lots of tea by <a href="https://leyn.cx" target="_blank" style="color: var(--purple-7); text-decoration: none;">leyn.cx</a>.</p>
         </div>
-    </section>
-
-    <section id="stats" class="section">
-        <div class="container">
-            <h2>📊 GitHub Stats</h2>
-            <div class="stats-grid">
-                <div class="stat-card animate-slide-in" style="--delay: 0.1s">
-                    <img src="https://github-readme-stats.vercel.app/api?username=Laichouchi&theme=dark&hide_border=false&include_all_commits=false&count_private=false" alt="GitHub Stats">
-                </div>
-                <div class="stat-card animate-slide-in" style="--delay: 0.2s">
-                    <img src="https://nirzak-streak-stats.vercel.app/?user=Laichouchi&theme=dark&hide_border=false" alt="GitHub Streak">
-                </div>
-                <div class="stat-card animate-slide-in" style="--delay: 0.3s">
-                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Laichouchi&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact" alt="Top Languages">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="quote" class="section">
-        <div class="container">
-            <h2>✍️ Random Dev Quote</h2>
-            <div class="quote-card animate-pop-in">
-                <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote">
-            </div>
-        </div>
-    </section>
-
-    
     </footer>
 
     <script src="script.js"></script>
-    <script src="particles.js"></script>
-    <script src="scroll-animations.js"></script>
 </body>
 </html>
